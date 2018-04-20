@@ -80,7 +80,7 @@ Here need to understand two algorithms:
 
 # Performance
 
-
+I simply called the core algorithm 10,000 times and plotted the required run time with a line chart. you can try <pre>yarn run perf</pre>
 
 # end 
 
