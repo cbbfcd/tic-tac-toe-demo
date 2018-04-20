@@ -1,0 +1,19 @@
+{
+  "name": "winner",
+  "version": "1.0.0",
+  "description": "my answer demo",
+  "main": "index.js",
+  "author": "bobby",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "ai": "parcel ai.html",
+    "perf": "parcel performance.html"
+  },
+  "dependencies": {
+    "dot": "^1.1.2"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.5"
+  }
+}

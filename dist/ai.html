@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ai</title>
+  <link rel="stylesheet" type="text/css" href="/dist/7fe2005dcd8c6c77cdc065b60f02b078.css">
+  <script type="text/x-dot-template" id="chessBoardAITmpl">
+     <div class="main">
+        {{? it.length}}
+          {{ for(let i = 0; i < it.length; i++){ }}
+            {{for(let j = 0; j < it[i].length; j++){ }}
+              <div data-pos="{{=[i,j]}}">{{=it[i][j]}}</div>
+            {{ } }}
+          {{ } }}
+        {{?}}
+        {{? !it.length}} 
+          <div>chessboard data is empty!</div>
+        {{?}}
+    </div>
+  </script>
+  <script type="text/x-dot-template" id="tipTmpl">
+    {{?it.show}}
+      <div>{{=it.msg}}</div>
+    {{?}}
+  </script>
+</head>
+<body>
+  <div class="title">
+    <p>i'm a fade AI, so you first!</p>
+  </div>
+  <div id="board-root"></div>
+  <div id="tip"></div>
+  <a id="btn" style="margin-top: 45px">restar!</a>
+</body>
+<script type="text/javascript" src="/dist/308a9df8cab088f518fcef5ad5c4b02e.js"></script>
+</html>

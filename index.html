@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>winner</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script type="text/x-dot-template" id="myAnswerTmpl">
+    <div>
+      {{? !it.err && it.count > 0}}
+        you have <a style="color: #1946db; font-size: 20px">{{=it.count}}<a> ways to win!
+
+        it's : 
+        [
+        <a style="color: #1946db; font-size: 20px">
+          {{~it.answer:value}}
+            {{=value}}
+          {{~}}
+        </a>
+        ]
+      {{?}}
+      {{? it.err}} 
+          <div style="color: red;">{{=it.err}}</div>
+      {{?}}
+      {{? !it.err && it.count === 0}} 
+          <div style="color: red;">game over! return []</div>
+      {{?}}
+      {{? !it.err && it.count === -1}} 
+          <div style="color: red;">{{=it.role}} can't win within one step! return []</div>
+      {{?}}
+    </div>
+  </script>
+  <script type="text/x-dot-template" id="chessBoardTmpl">
+     <div class="main">
+        {{? it.length}}
+          {{ for(let i = 0,value; value=it[i++];){ }}
+            {{for(let j = 0,val; val=value[j++];){ }}
+              <div>{{= val}}</div>
+            {{ } }}
+          {{ } }}
+        {{?}}
+        {{? !it.length}} 
+          <div>chessboard data is empty!</div>
+        {{?}}
+    </div>
+  </script>
+</head>
+<body>
+  <input type="text" name="player" id="player" placeholder="input your role named 'x' or 'o'">
+  <div id='chessboard'></div>
+  <a id="btn" class="btn1">shuffle the chessboard!</a>
+  <a id="btn" class="btn2">go!</a>
+  <div id='root'></div>
+</body>
+<script type="text/javascript" src="./index.js"></script>
+</html>
