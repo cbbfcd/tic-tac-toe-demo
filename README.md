@@ -4,7 +4,7 @@ This is a reflection of an interview question. I have 7 days to complete this pr
 
 The project was built using [parcel][1] and [dot][2].
 
-The reason is simple enough and extremely fast!
+The reason is simple enough and extremely fast!!
 
 # question
 
