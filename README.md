@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-> this is a demo!
+> tic-tac-toe
 
 This is a reflection of an interview question. I have 7 days to complete this problem, so I want to do some interesting experiments!
 
