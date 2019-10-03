@@ -1,5 +1,7 @@
 # Tic-Tac-Toe
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cbbfcd/tic-tac-toe-demo.svg)](https://greenkeeper.io/)
+
 > tic-tac-toe
 
 This is a reflection of an interview question. I have 7 days to complete this problem, so I want to do some interesting experiments!
